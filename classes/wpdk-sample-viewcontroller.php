@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @class           WPDKSampleFirstViewController
  * @author          wpXtreme team
@@ -16,21 +17,23 @@ class WPDKSampleFirstViewController extends WPDKViewController {
    *
    * @return WPDKSampleFirstViewController
    */
-  public function __construct() {
+  public function __construct()
+  {
     // Build the container, with default header
     parent::__construct( 'my-view-controller-1', 'WPDK Sample Plugin #1 - Output of first view controller' );
   }
 
-  public function display() {
+  public function display()
+  {
 
     // call parent display to build default page structure
     parent::display();
 
     // show custom content
-?>
-<h3>View Controller ID: <?php echo $this->id ?></h3>
-<div>This is a generic content of first view controller.</div>
-<?php
+    ?>
+    <h3>View Controller ID: <?php echo $this->id ?></h3>
+    <div>This is a generic content of first view controller.</div>
+  <?php
   }
 
 }
@@ -52,21 +55,23 @@ class WPDKSampleSecondViewController extends WPDKViewController {
    *
    * @return WPDKSampleSecondViewController
    */
-  public function __construct() {
+  public function __construct()
+  {
     // Build the container, with default header
     parent::__construct( 'my-view-controller-2', 'WPDK Sample Plugin #1 - Output of second view controller' );
   }
 
-  public function display() {
+  public function display()
+  {
 
     // call parent display to build default page structure
     parent::display();
 
     // show custom content
-?>
+    ?>
     <h3>View Controller ID: <?php echo $this->id ?></h3>
     <div>This is a generic content of second view controller.</div>
-<?php
+  <?php
   }
 
 }
