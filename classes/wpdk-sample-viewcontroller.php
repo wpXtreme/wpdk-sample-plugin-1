@@ -11,6 +11,23 @@
 class WPDKSampleFirstViewController extends WPDKViewController {
 
   /**
+   * Return a singleton instance of WPDKSampleFirstViewController class
+   *
+   * @brief Singleton
+   *
+   * @return WPDKSampleFirstViewController
+   */
+  public static function init()
+  {
+    static $instance = null;
+    if ( is_null( $instance ) ) {
+      $instance = new self();
+    }
+
+    return $instance;
+  }
+
+  /**
    * Create an instance of WPDKSampleFirstViewController class
    *
    * @brief Construct
@@ -23,6 +40,11 @@ class WPDKSampleFirstViewController extends WPDKViewController {
     parent::__construct( 'my-view-controller-1', 'WPDK Sample Plugin #1 - Output of first view controller' );
   }
 
+  /**
+   * Display
+   *
+   * @brief Display
+   */
   public function display()
   {
 
@@ -49,6 +71,23 @@ class WPDKSampleFirstViewController extends WPDKViewController {
 class WPDKSampleSecondViewController extends WPDKViewController {
 
   /**
+   * Return a singleton instance of WPDKSampleSecondViewController class
+   *
+   * @brief Singleton
+   *
+   * @return WPDKSampleSecondViewController
+   */
+  public static function init()
+  {
+    static $instance = null;
+    if ( is_null( $instance ) ) {
+      $instance = new self();
+    }
+
+    return $instance;
+  }
+
+  /**
    * Create an instance of WPDKSampleSecondViewController class
    *
    * @brief Construct
@@ -61,6 +100,11 @@ class WPDKSampleSecondViewController extends WPDKViewController {
     parent::__construct( 'my-view-controller-2', 'WPDK Sample Plugin #1 - Output of second view controller' );
   }
 
+  /**
+   * Display
+   *
+   * @brief Display
+   */
   public function display()
   {
 
